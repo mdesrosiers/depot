@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_current_time
 
   def set_current_time
-    @current_time = Time.now + 1.hour
+    @current_time = Time.now
   end
 
 end
