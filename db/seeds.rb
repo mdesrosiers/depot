@@ -33,7 +33,7 @@ Product.create(:title => 'Programming Ruby 1.9',
   :price => 49.50)
   # . . .
 
-Product.create(:title => 'Debug It!',
+Product.create(:title => 'Debug It 2nd Edition!',
   :description => 
     %{<p>
         Professional programmers develop a knack of unerringly zeroing in on
