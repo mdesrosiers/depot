@@ -8,7 +8,7 @@
 #---
 # be sure to change these
 set :user, 'mdesrosiers'
-set :domain, 'depot.test.com'
+set :domain, 'depot.production.com'
 set :application, 'depot'
 
 # file paths
