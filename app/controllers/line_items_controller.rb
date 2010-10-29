@@ -48,6 +48,7 @@ class LineItemsController < ApplicationController
       if @line_item.save
         format.html { redirect_to(@line_item.cart, :notice => 'Line item was successfully created.') }
         format.xml  { render :xml => @line_item, :status => :created, :location => @line_item }
+        session[:counter] = 0
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @line_item.errors, :status => :unprocessable_entity }
