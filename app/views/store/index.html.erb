@@ -5,7 +5,7 @@
 <h1>Your Pragmatic Catalog</h1>
 
 <% if @access_count > 5 %>
-	<p>This page was accessed <%= pluralize (@access_count, 'time') %>.</p>
+	<p>This page was accessed <%= pluralize(@access_count, 'time') %>.</p>
 <% end %>
 
 <% @products.each do |product| %>
