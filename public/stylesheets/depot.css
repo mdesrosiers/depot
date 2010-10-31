@@ -1,30 +1,30 @@
 /* Global styles */
 
 #store #notice {
-        color: #000;
-        border: 2px solid red;
-        padding: 1em;
-        margin-bottom: 2em;
-        background-color: #f0f0f0;
-        font: bold smaller sans-serif;
+  color: #000;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
 }
 
 
 #store h1 {
-        font:  150% sans-serif;
-        color: #226;
-        border-bottom: 3px dotted #77d;
+  font:  150% sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
 }
 
 /* Styles for products/index */
 
 #product_list table {
-        border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 #product_list table tr td {
-        padding: 5px;
-        vertical-align: top;
+  padding: 5px;
+  vertical-align: top;
 }
 
 #product_list .list_image {
@@ -37,17 +37,17 @@
 }
 
 #product_list .list_description dl {
-        margin: 0;
+  margin: 0;
 }
 
 #product_list .list_description dt {
-	color:        #244;
-	font-weight:  bold;
-	font-size:    larger;
+  color:        #244;
+  font-weight:  bold;
+  font-size:    larger;
 }
 
 #product_list .list_description dd {
-        margin: 0;
+  margin: 0;
 }
 
 #product_list .list_actions {
@@ -86,7 +86,7 @@
 }
 
 #main {
-  margin-left: 13em;
+  margin-left: 15em;
   padding-top: 4ex;
   padding-left: 2em;
   background: white;
@@ -97,7 +97,7 @@
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 12em;
+  width: 14em;
   background: #141;
 }
 
@@ -129,19 +129,19 @@
 
 
 #store .entry h3 {
- margin-top: 0;
- margin-bottom: 2px;
- color: #227;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #227;
 }
 
 #store .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.8em; 
 }
 
 #store .entry .price_line {
- clear: both;
- margin-bottom: 0.5em;
+  clear: both;
+  margin-bottom: 0.5em;
 }
 
 #store .entry .add_to_cart {
@@ -171,4 +171,15 @@
 #store .total_line .total_cell {
   font-weight: bold;
   border-top: 1px solid #595;
+}
+
+#cart, #cart table {
+  font-size: smaller;
+  color:	white;
+}
+
+#cart table {
+  border-top:	1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
 }

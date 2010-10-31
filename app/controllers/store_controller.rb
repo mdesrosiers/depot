@@ -2,6 +2,7 @@ class StoreController < ApplicationController
   def index
     @access_count = get_next_index_access_count
     @products = Product.all
+    @cart = current_cart
   end
 
   def get_next_index_access_count
