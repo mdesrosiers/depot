@@ -1,4 +1,8 @@
+*.rbc
 .bundle
+vendor/bundle
+log/*
+tmp/*
 db/*.sqlite3
-log/*.log
-tmp/**/*
+public/system/*
+coverage/
