@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>
+<title>Martin Desrosiers's Git Achievements</title>
+<description></description>
+<link></link>
+<item><title>Apprentice Architect (Level 2)</title><description>Created a new repository with git init.</description></item>
+<item><title>Baptised</title><description>Set global user name using git config.</description></item>
+<item><title>Student</title><description>Accessed the documentation for a command with git [command] --help</description></item>
+</channel></rss>
