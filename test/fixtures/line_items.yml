@@ -1,9 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  product_id: ruby
-  cart_id: one
+  product: ruby
+  cart: one
+  order: one
+  price: 9.99
+  quantity: 1
 
 two:
-  product_id: two
-  cart_id: one
+  product: two
+  cart: one
+  order: one
+  price: 9.99
+  quantity: 2
