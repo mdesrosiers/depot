@@ -17,9 +17,9 @@
 			<span><%= @current_time.to_formatted_s(:short) %></span><br />
 
 			<% if @cart %>
-				<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
-					<%= render @cart %>
-				<% end %>
+			<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+			<%= render @cart %>
+			<% end %>
 			<% end %>
 
 			<a href="http://www....">Home</a><br />
@@ -28,6 +28,9 @@
 			<a href="http://www..../contact">Contact</a><br />
 		</div>
 		<div id="main">
+			<% if notice %>
+			<p id="notice"><%= notice %></p>
+			<% end %>
 			<%= yield %><!-- <label id="code.depot.e.include"/> -->
 		</div>
 	</div>
