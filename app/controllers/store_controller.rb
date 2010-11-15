@@ -1,4 +1,6 @@
 class StoreController < ApplicationController
+  skip_before_filter :authorize
+
   def index
     @access_count = get_next_index_access_count
     @products = Product.all
