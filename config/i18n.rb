@@ -6,16 +6,10 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-module ApplicationHelper
-  def hidden_div_if(condition, attributes = {}, &block)
-    if condition
-      attributes["style"] = "display: none"
-    end
-    content_tag("div", attributes, &block)
-  end
+#encoding: utf-8
+I18n.default_locale = :en
 
-  LANGUAGES = [
-    ['English',                  'en'],
-    ["Espa&ntilde;ol".html_safe, 'es']
-  ]
-end
+LANGUAGES = [
+  ['English',                  'en'],
+  ["Espa&ntilde;ol".html_safe, 'es']
+]
