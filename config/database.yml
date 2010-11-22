@@ -24,4 +24,4 @@ production:
   timeout: 5000
   username: depot
   password: password
-  host: localhost
+  host: prod.depot.com
