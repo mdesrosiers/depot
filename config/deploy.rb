@@ -8,12 +8,12 @@
 #---
 # be sure to change these
 set :user, 'mdesrosiers'
-set :domain, 'depot.production.com'
+set :domain, 'github.com'
 set :application, 'depot'
 
 # file paths
-set :repository,  "#{user}@#{domain}:git/#{application}.git" 
-set :deploy_to, "/Users/#{user}/#{domain}" 
+set :repository,  "git://#{domain}/#{user}/#{application}.git" 
+set :deploy_to, "/Users/#{user}/prod.depot.com" 
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)
