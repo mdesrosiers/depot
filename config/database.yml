@@ -22,6 +22,6 @@ production:
   database: depot_production
   pool: 5
   timeout: 5000
-  username: depot
-  password: password
+  username: root
+  password:
   host: prod.depot.com
