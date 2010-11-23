@@ -1,0 +1,22 @@
+base: &base
+  adapter: sqlite3
+  timeout: 5000
+
+development:
+  database: #{shared_path}/db/development.sqlite3
+  <<: *base
+
+test:
+  database: #{shared_path}/db/test.sqlite3
+  <<: *base
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: #{application}_production
+  pool: 5
+  timeout: 5000
+  username: #{user}
+  password: password
+  host: prod.depot.com

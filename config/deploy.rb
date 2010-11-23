@@ -6,16 +6,20 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
+
+require "config/capistrano_database_yml"
+
 # be sure to change these
 set :user, 'mdesrosiers'
 set :domain, 'prod.depot.com'
 set :application, 'depot'
+set :template_dir, "config"
 
 default_run_options[:pty] = true
 
 # file paths
 set :repository,  "git@github.com:mdesrosiers/depot.git" 
-set :deploy_to, "/Users/#{user}/#{domain}" 
+set :deploy_to, "/Users/#{user}/#{domain}"
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)
@@ -31,7 +35,7 @@ role :db, domain, :primary => true
 # if (for example) you have locally installed gems or applications.  Note:
 # this needs to contain the full values for the variables set, not simply
 # the deltas.
-# default_environment['PATH']='<your paths>:/usr/local/bin:/usr/bin:/bin'
+default_environment['PATH']='/usr/local/bin:/usr/bin:/bin'
 # default_environment['GEM_PATH']='<your paths>:/usr/lib/ruby/gems/1.8'
 
 # miscellaneous options
