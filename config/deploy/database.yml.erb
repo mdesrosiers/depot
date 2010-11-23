@@ -17,6 +17,6 @@ production:
   database: <%= application %>_production
   pool: 5
   timeout: 5000
-  username: <%= user %>
+  username: depot
   password: <%= Capistrano::CLI.ui.ask("Enter MySQL database password: ") %>
   host: prod.depot.com
