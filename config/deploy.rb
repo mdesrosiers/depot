@@ -13,7 +13,6 @@ require "config/capistrano_database_yml"
 set :user, 'mdesrosiers'
 set :domain, 'prod.depot.com'
 set :application, 'depot'
-set :template_dir, "config"
 
 default_run_options[:pty] = true
 
