@@ -3,20 +3,20 @@ base: &base
   timeout: 5000
 
 development:
-  database: #{shared_path}/db/development.sqlite3
+  database: <%= shared_path %>/db/development.sqlite3
   <<: *base
 
 test:
-  database: #{shared_path}/db/test.sqlite3
+  database: <%= shared_path %>/db/test.sqlite3
   <<: *base
 
 production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: #{application}_production
+  database: <%= application %>_production
   pool: 5
   timeout: 5000
-  username: #{user}
-  password: #{Capistrano::CLI.ui.ask("Enter MySQL database password: ")}
+  username: <%= user %>
+  password: <%= Capistrano::CLI.ui.ask("Enter MySQL database password: ") %>
   host: prod.depot.com
