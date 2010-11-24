@@ -1,0 +1,3 @@
+== Depot
+
+This is the shopping cart tutorial presented in the book Agile Web Development With Rails (4th edition).
