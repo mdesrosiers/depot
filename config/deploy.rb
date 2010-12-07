@@ -10,15 +10,15 @@
 require "config/capistrano_database_yml"
 
 # be sure to change these
-set :user, 'mdesrosiers'
-set :domain, 'prod.depot.com'
+set :user, 'deploy'
+set :domain, 'ec2-184-72-162-4.compute-1.amazonaws.com'
 set :application, 'depot'
 
 default_run_options[:pty] = true
 
 # file paths
 set :repository,  "git@github.com:mdesrosiers/depot.git" 
-set :deploy_to, "/Users/#{user}/#{domain}"
+set :deploy_to, "/var/www/#{application}"
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)
