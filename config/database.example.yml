@@ -3,11 +3,11 @@ base: &base
   timeout: 5000
 
 development:
-  database: #{shared_path}/db/development.sqlite3
+  database: db/development.sqlite3
   <<: *base
 
 test:
-  database: #{shared_path}/db/test.sqlite3
+  database: db/test.sqlite3
   <<: *base
 
 production:
