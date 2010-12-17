@@ -49,4 +49,5 @@ Depot::Application.configure do
 
   config.logger = Logger.new(config.paths.log.first, 'daily')
 
+  config.action_controller.asset_host = "https://s3.amazonaws.com/mdesrosiers_depot"
 end
